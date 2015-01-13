@@ -19,8 +19,7 @@
 #include "crc.h"
 
 
-void
-main(void)
+int main()
 {
 	unsigned char  test[] = "123456789";
 
@@ -40,5 +39,5 @@ main(void)
 	 */
 	crcInit();
 	printf("The crcFast() of \"123456789\" is 0x%X\n", crcFast(test, strlen(test)));
-
+	return 1;
 }   /* main() */
